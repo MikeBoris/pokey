@@ -1,0 +1,18 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Sign In</h1>
+	<form action="/reggie2" method="POST" name="login">
+    <div class="form-group">
+      <div>
+        <select id="myform" name='tests' multiple class="form-control">
+            <option value="test1"> Category 01 </option>
+            <option value="test2"> Category 02 </option>
+            <option value="test3"> Category 03 </option>
+        </select>
+      </div>
+    </div>
+		<p><input type="submit" value="Submit!"></p>
+	</form>
+{% endblock %}
